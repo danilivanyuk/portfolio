@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*{
+  margin: 0; 
+  padding: 0;
+}
+
+*::after, *::before{
+  margin: 0; 
+  padding: 0;
+}
+
+.cursor {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-40%, -40%);
+          transform: translate(-40%, -40%);
+  pointer-events: none;
+  background: none;
+  -webkit-transition-duration: 90ms;
+          transition-duration: 90ms;
+}
+
+.cursor-link {
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(0.7) translate(-57%, -57%);
+          transform: scale(0.7) translate(-57%, -57%);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transition-property: background, -webkit-transform;
+  transition-property: background, -webkit-transform;
+  transition-property: background, transform;
+  transition-property: background, transform, -webkit-transform;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danil Ivanyuk | Home</title>
+  <link rel="stylesheet" href="/styles/home.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="container">
+    <section>
+      <div class="info">
+        <p id="name">Danil Ivanyuk</p>
+        <div class="contacts">
+          <ul>
+            <li><a href="https://t.me/groovyD1"><i class="fa fa-telegram"></i></a></li>
+            <li><a href="https://vk.com/id195344065"><i class="fa fa-vk"></i></a></li>
+            <li><a href="https://github.com/danilivanyuk"><i class="fa fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="resume-container">
+        <div class="about">
+            <div class="skills">
+                <p class="heading">Skills</p>
+                <ul>
+                    <li class="list">HTML</li>
+                    <li class="list">CSS</li>
+                    <li class="list">SASS</li>
+                    <li class="list">Bootstrap</li>
+                    <li class="list">JavaScript</li>
+                    <li class="list">Python</li>
+                    <li class="list">Django</li>
+                </ul>
+            </div>
+            <div class="learning">
+                <p class="heading">Learning</p>
+                <ul>
+                    <li class="list">MySQL</li>
+                    <li class="list">ReactJS</li>
+                    <li class="list">Czech</li>
+                </ul>
+            </div>
+            <div class="tools">
+                <p class="heading">Tools</p>
+                <ul>
+                    <li class="list">VS Code</li>
+                    <li class="list">Notion</li>
+                    <li class="list">Figma</li>
+                    <li class="list">Github</li>
+                </ul>
+            </div>
+        </div>
+        <div class="working-on">
+            <p class="heading">I'm currently working on:</p>
+            <p class="text">My personal projects on ReactJS.
+            </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="start-point">
+        <h3>Projects</h3>
+        <div class="line"></div>
+    </div>
+    <div class="projects">
+      <div class="project-container">
+          <div class="project-image">
+              <img src="/assets/projects/groovy-bg.png" alt="">
+          </div>
+          <div class="card">
+              <div class="project-name">Groovy Background</div>
+              <div class="description">
+                  I made this site to make screenshot cool by adding to it amazing background.
+              </div>
+              <div class="build-with">
+                  <ul>
+                      <li>React</li>
+                      <li>CSS</li>
+                  </ul>                    
+              </div>
+              <div class="visit">
+                  <a href="https://groovy-bg.netlify.app/">Visit Site</a>
+              </div>
+          </div>
+      </div>
+      <div class="project-container">
+          <div class="project-image">
+              <img src="/assets/projects/calorie-water-tracker.png" alt="">
+          </div>
+          <div class="card">
+              <div class="project-name">Calorie | Water Tracker</div>
+
+              <div class="description">
+                  This was the one of the first project on JavaScript. I used local storage to store data.
+              </div>
+              <div class="build-with">
+                  <ul>
+                      <li>HTML</li>
+                      <li>Bootstrap</li>
+                      <li>JavaScript</li>
+                  </ul>                    
+              </div>
+              <div class="visit">
+                  <a href="https://github.com/danilivanyuk/calories-and-water-tracker">Source Code</a>
+                  <a href="http://calorie-water-tracker.s3-website.eu-central-1.amazonaws.com/">Visit Site</a>
+              </div>
+          </div>
+      </div>
+      <div class="project-container">
+          <div class="project-image">
+              <img src="/assets/projects/converter.png" alt="">
+          </div>
+          <div class="card">
+              <div class="project-name">Converter</div>
+              <div class="description">
+                  I tired of google convert currency every time. So i made it little site for  myself.
+              </div>
+              <div class="build-with">
+                  <ul>
+                      <li>HTML</li>
+                      <li>Bootstrap</li>
+                      <li>JavaScript</li>
+                      <li>API</li>
+                  </ul>                    
+              </div>
+              <div class="visit">
+                  <a href="https://github.com/danilivanyuk/converter">Source Code</a>
+                  <a href="https://currecny-converter.s3.eu-north-1.amazonaws.com/index.html">Visit Site</a>
+              </div>
+          </div>
+      </div>
+  </div>
+    </section>
+  </div>
+  <footer>
+    <p>Copyright &copy; 2020, Danil Ivanyuk, All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const cursor = document.querySelector('.cursor');
+    const links = document.querySelectorAll('a')
+    // const nav_line = document.querySelector('.nav-line');
+    
+    document.addEventListener('mousemove', e =>{
+        cursor.style.top = e.pageY + "px";
+        cursor.style.left = e.pageX + "px";
+    })
+    
+    links.forEach(link => {
+        link.addEventListener('mouseleave', () =>{
+            cursor.classList.remove("cursor-link");
+        });
+        link.addEventListener('mouseover', () =>{
+            cursor.classList.add("cursor-link");
+        });
+    })
+    </script>
+</body>
+</html>
